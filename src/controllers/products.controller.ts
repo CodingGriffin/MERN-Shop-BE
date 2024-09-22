@@ -23,7 +23,7 @@ const productsController = {
   getOne: async (req: Request, res: Response) => {
     try {
       const index = +req.params.id;
-      res.json(products[index]);
+      res.json(products[index-1]);
     } catch (err: any) {
       return res.status(500).json({ msg: err.message });
     }

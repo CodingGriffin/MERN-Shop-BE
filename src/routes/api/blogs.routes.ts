@@ -3,6 +3,6 @@ import blogController from "../../controllers/blogs.controller";
 
 const route = Router();
 
-route.post('/', blogController.getAll);
+route.get('/', blogController.getAll);
 
 export default route;

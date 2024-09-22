@@ -10,6 +10,6 @@ route.use("/landing", landingRoute);
 route.use("/products", productsRoute);
 route.use("/contact", contactRoute);
 route.use("/about", aboutRoute);
-route.use("/blog", blogRoute);
+route.use("/blogs", blogRoute);
 
 export default route;

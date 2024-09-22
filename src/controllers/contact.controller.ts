@@ -3,10 +3,10 @@ import { Request, Response } from "express";
 const contactController = {
   snedMessage: async (req: Request, res: Response) => {
     const { name, email, message } = req.body;
-    let data: any = {};
-    data["sucess"] = "תודה על פנייתך! נחזור אליך בהקדם.";
+    let msg: any = {};
+    msg["sucess"] = "תודה על פנייתך! נחזור אליך בהקדם.";
     try {
-      res.json(data);
+      res.json(msg);
     } catch (err: any) {
       return res.status(500).json({ msg: err.message });
     }
